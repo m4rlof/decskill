@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="d-flex content-wrapper">
+        <div class="profile-wrapper">
+            <img src="{{profileImage}}" alt="Profile Image" srcset="" class="profile-image">
+        </div>
+        <div class="content-input-wrapper">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <span class="header-itens header-name">{{name}}</span>
+                    <span class="header-itens header-helpers">@{{userName}}</span>
+                    <span class="header-itens header-helpers" *ngIf="createdSeconds < 60">{{createdSeconds}}s</span>
+                    <span class="header-itens header-helpers" *ngIf="createdSeconds > 60">{{date |
+                        date:'M/d/yyH:mm'}}</span>
+                </div>
+                <div class="position-relative">
+                    <app-popover [isActive]="open">
+                        <div *ngIf="!cancelWrapper" class="d-flex popover-wrapper" (click)="openCancelWrapper()">
+                            <div class="popover-icon-wrapper">
+                                <i class="bi bi-trash popover-icon"></i>
+                            </div>
+                            <div>
+                                <span class="popover-action-label">Deletar</span>
+                            </div>
+                        </div>
+                        <div *ngIf="cancelWrapper" class="cancel-wrapper">
+                            <div class="cancel-title-wrapper">
+                                <span class="cancel-title">Remover Tweet?</span>
+                            </div>
+                            <span class="cancel-content">Isto não pode ser desfeito.</span>
+                            <div class="d-block cancel-footer">
+                                <button class="btn btn-danger custom-buttom" (click)="excludeTweet()">Deletar</button>
+                                <button type="button" class="btn btn-secondary custom-buttom cancel-button"
+                                    (click)="cancelDelete()">Cancelar</button>
+                            </div>
+                        </div>
+                    </app-popover>
+                    <span class="option-action" (click)="openPopover()"><i class="bi bi-three-dots"></i></span>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <span>{{content}}</span>
+            </div>
+            <div class="footer-icon-wrapper">
+                <span class="footer-icon"><i class="bi bi-chat"></i></span>
+                <span class="footer-icon"><i class="bi bi-arrow-clockwise"></i></span>
+                <span class="footer-icon"><i class="bi bi-heart"></i></span>
+                <span class="footer-icon"><i class="bi bi-upload"></i></span>
+                <span class="footer-icon"><i class="bi bi-bar-chart"></i></span>
+            </div>
+        </div>
+    </div>
+</div>

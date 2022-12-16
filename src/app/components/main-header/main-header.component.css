@@ -1,0 +1,90 @@
+.wrapper {
+    border-bottom: 1px solid rgb(239, 243, 244);
+    border-right: 1px solid rgb(239, 243, 244);
+    border-left: 1px solid rgb(239, 243, 244);
+}
+
+.header-wrapper {
+    padding: 16px;
+    border-bottom: 1px solid rgb(239, 243, 244);
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.whats-happening-input {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+.whats-happening-input::placeholder {
+    color: #536471;
+    font-weight: 400;
+}
+
+.whats-happening-input:focus{
+    outline: none;
+}
+
+.profile-image {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.profile-wrapper {
+    width: 10%;
+}
+
+.content-wrapper {
+    padding: 16px;
+}
+
+.content-input-wrapper {
+    width: 90%;
+}
+
+.helper-wrapper {
+    border-bottom: 1px solid rgb(239, 243, 244);
+    padding-bottom: 12px;
+}
+
+.helper {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(29, 155, 240);
+}
+
+.helper-icon {
+    color: rgb(29, 155, 240);
+}
+
+.content-footer-wrapper {
+    padding-top: 12px;
+}
+
+.content-footer-icon-wrapper {
+    display: flex
+}
+
+.content-footer-icon {
+    cursor: pointer;
+    margin-right: 15px;
+    color: rgb(29, 155, 240);
+}
+
+.tweet-button {
+    border-radius: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgb(29, 155, 240);
+}
+
+.char-counter {
+    font-size: 15px;
+    color: rgb(83, 100, 113);
+    padding-right: 15px;
+}

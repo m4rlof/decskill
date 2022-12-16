@@ -1,0 +1,110 @@
+.wrapper {
+    border-bottom: 1px solid rgb(239, 243, 244);
+    border-right: 1px solid rgb(239, 243, 244);
+    border-left: 1px solid rgb(239, 243, 244);
+}
+
+.profile-image {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.profile-wrapper {
+    width: 10%;
+}
+
+.content-wrapper {
+    padding: 16px;
+}
+
+.content-input-wrapper {
+    width: 90%;
+}
+
+.header-itens {
+    margin-right: 4px;
+}
+
+.header-name {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.header-helpers {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(83, 100, 113);
+}
+
+.option-action {
+    cursor: pointer;
+    color: rgb(83, 100, 113);
+}
+
+.footer-icon-wrapper {
+    margin-top: 12px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    cursor: pointer;
+    color: rgb(83, 100, 113);
+}
+
+.popover-wrapper {
+    padding: 2px 12px;
+    cursor: pointer;
+}
+
+.popover-icon-wrapper {
+    padding-right: 12px;
+}
+
+.popover-icon {
+    color: rgb(244, 33, 46);
+}
+
+.popover-action-label {
+    color: rgb(244, 33, 46);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.content-wrapper {
+    word-wrap: break-word;
+}
+
+.cancel-wrapper {
+    padding: 16px;
+}
+
+.cancel-title-wrapper {
+    margin-bottom: 8px;
+}
+
+.cancel-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cancel-content {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(83, 100, 113);
+}
+
+.cancel-footer {
+    margin-top: 24px;
+}
+
+.custom-buttom {
+    width: 100%;
+    border-radius: 99px;
+}
+
+.cancel-button {
+    margin-top: 12px;
+}
